@@ -1,4 +1,3 @@
-/target/
-!/target/site/*
 /.allure/
 /.idea/
+/target/
