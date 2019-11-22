@@ -50,7 +50,7 @@ public class InsuranceCalsSteps {
     @Step("значение \"{0}\" равно \"{1}\"")
     public void checkField (String field, String value) {
         try {
-            Thread.sleep(700);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -98,5 +98,4 @@ public class InsuranceCalsSteps {
                 }
         );
     }
-
 }
