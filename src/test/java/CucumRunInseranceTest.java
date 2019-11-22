@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources/"},
         glue = {"ru.sberbank.autotests.steps"},
         plugin = {"pretty", "io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm"},
-        tags = "@web")
-public class CucumberRunner {
+        tags = "@TestInsurance")
+public class CucumRunInseranceTest {
+
 }
