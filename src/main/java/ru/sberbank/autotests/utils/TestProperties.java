@@ -12,7 +12,7 @@ public class TestProperties {
 
     private TestProperties(){
         try {
-            properties.load(new FileReader(new File(System.getProperty("user.dir") + "\\src\\resources\\environment.properties")));
+            properties.load(new FileReader(new File(System.getProperty("user.dir") + "\\src\\main\\resources\\environment.properties")));
         } catch (IOException e) {
             e.printStackTrace();
         }
