@@ -7,7 +7,6 @@ import ru.sberbank.autotests.pages.MainPage;
 public class InsuranceSteps {
     @When("нажата кнопка Подать заявку")
     public void hoverMenuItem() {
-        InsurancePage insurancePage = new InsurancePage();
-        insurancePage.scrollAndClick(insurancePage.buttonToStatement);
+        new InsurancePage().clickToButton();
     }
 }
