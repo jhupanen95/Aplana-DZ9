@@ -42,7 +42,7 @@ public abstract class BasePageObject {
     public void scrollAndClick(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
         js.executeScript("return arguments[0].scrollIntoView(false);", element);
-        wait.until(ExpectedConditions.visibilityOf(element)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(element)).click();
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {

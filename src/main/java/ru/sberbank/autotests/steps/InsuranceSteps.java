@@ -8,11 +8,6 @@ public class InsuranceSteps {
     @When("нажата кнопка Подать заявку")
     public void hoverMenuItem() {
         InsurancePage insurancePage = new InsurancePage();
-        try {
-            Thread.sleep(2200);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        insurancePage.click(insurancePage.buttonToStatement);
+        insurancePage.scrollAndClick(insurancePage.buttonToStatement);
     }
 }

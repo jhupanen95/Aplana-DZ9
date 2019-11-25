@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class InsurancePage extends BasePageObject{
 
-    @FindBy(xpath = "//a[@class='kit-button  kit-button_default kit-button_type_big analytics-button']")
+    @FindBy(xpath = "//div[@class='product-teaser-full-width__button']")
     public WebElement buttonToStatement;
 
 }
