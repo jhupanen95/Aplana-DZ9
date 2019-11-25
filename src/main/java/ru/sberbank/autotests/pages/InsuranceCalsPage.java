@@ -50,7 +50,7 @@ public class InsuranceCalsPage extends BasePageObject{
         field.clear();
         field.sendKeys(value);
         try {
-            Thread.sleep(700);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

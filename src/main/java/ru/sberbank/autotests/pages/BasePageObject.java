@@ -44,12 +44,11 @@ public abstract class BasePageObject {
         js.executeScript("return arguments[0].scrollIntoView(false);", element);
         wait.until(ExpectedConditions.elementToBeClickable(element)).click();
         try {
-            Thread.sleep(500);
+            Thread.sleep(700);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
-
     public String getField(WebElement element) {
         return element.getText();
     }
